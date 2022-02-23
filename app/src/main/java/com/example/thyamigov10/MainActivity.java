@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         String userID = UserID.getText().toString();
         String password = Password.getText().toString();
         //Two times for two values to be compared as Admin and Ambulance LogIn's
-        String ambID = UserID.getText().toString();
-        String ambPd = Password.getText().toString();
+        //String ambID = UserID.getText().toString();
+        //String ambPd = Password.getText().toString();
         //Creating My Own String To then Compare the abv Ones too...
         String AdminID = "Mangalam"; //...................................admin login id String
         String AdminPD = "Charu"; //...................................admin login Password
@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
         //Main Logic - to compare individually each string to differentiate the Log-In and henceforth take them to Diff Intent
         if(userID.equals(AdminID) && password.equals(AdminPD)){
             //this if - for admin check
-            Intent intent = new Intent(this, AdminLoginActivity.class);
+            Intent intent = new Intent(this, adminLogin.class);
         }
-        else if (ambID.equals(AmbId) && ambPd.equals(AmbPd)){
+        else if (userID.equals(AmbId) && password.equals(AmbPd)){
             //this if - for ambulance check
             Intent intent = new Intent(this, ambLogin.class);
         }

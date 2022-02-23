@@ -1,7 +1,9 @@
 package com.example.thyamigov10;
 
 
-public class adminLogin {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class adminLogin extends AppCompatActivity {
 
 
 //My Name Is Anthony Gonsalvis.

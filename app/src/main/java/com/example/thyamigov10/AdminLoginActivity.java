@@ -1,15 +1,14 @@
 package com.example.thyamigov10;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class AdminLoginActivity extends AppCompatActivity {
 
     //this is the line that I wrote and ...
     //this is basically a Function that I also has defined in the attribute
@@ -37,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         //Main Logic - to compare individually each string to differentiate the Log-In and henceforth take them to Diff Intent
         if(userID.equals(AdminID) && password.equals(AdminPD)){
             //this if - for admin check
-            Intent intent = new Intent(this, AdminLoginActivity.class);
+            Intent intent = new Intent(this, adminLogin.class);
         }
         else if (ambID.equals(AmbId) && ambPd.equals(AmbPd)){
             //this if - for ambulance check

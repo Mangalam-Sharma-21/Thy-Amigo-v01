@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThyAmigoV10">
         <activity
+            android:name=".AmbLogin"
+            android:icon="@mipmap/ic_launcher"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:icon="@mipmap/ic_launcher"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:icon="@mipmap/ic_launcher"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
